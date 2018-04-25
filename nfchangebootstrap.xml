@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="plugin" version="3.7" method="upgrade" client="site" group="system">
+	<name>plg_system_nfchangebootstrap</name>
+	<author>Alex Schmid</author>
+	<creationDate>April 2018</creationDate>
+	<copyright>Copyright (C) 2018 NetFant</copyright>
+	<license>GPL</license>
+	<authorEmail>schmid@netfant.ch</authorEmail>
+	<authorUrl>https://www.netfant.ch</authorUrl>
+	<version>1.0.0</version>
+	<description>PLG_CHANGEBOOTSTRAP_DESCRIPTION</description>
+	<files>
+		<filename plugin="nfchangebootstrap">nfchangebootstrap.php</filename>
+		<filename>index.html</filename>
+		<folder>language</folder>
+	</files>
+	<languages>
+		<language tag="en-GB">language/en-GB/en-GB.plg_system_nfchangebootstrap.ini</language>
+		<language tag="en-GB">language/en-GB/en-GB.plg_system_nfchangebootstrap.sys.ini</language>
+		<language tag="de-CH">language/de-CH/de-CH.plg_system_nfchangebootstrap.ini</language>
+		<language tag="de-CH">language/de-CH/de-CH.plg_system_nfchangebootstrap.sys.ini</language>
+	</languages>
+	<config>
+		<fields name="params">
+			<fieldset name="basic">
+				<field name="cdn_source"
+					   type="radio"
+					   default="1"
+					   class="btn-group btn-group-yesno"
+					   description="JFIELD_PLG_SYSTEM_NFCHANGEBOOTSTRAP_CDN_DESCRIPTION"
+					   label="JFIELD_PLG_SYSTEM_NFCHANGEBOOTSTRAP_CDN_LABEL">
+					<option value="0">JOFF</option>
+					<option value="1">JON</option>
+				</field>
+			</fieldset>
+		</fields>
+	</config>
+</extension>
