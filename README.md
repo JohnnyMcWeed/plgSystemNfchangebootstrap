@@ -1,6 +1,7 @@
 # plgSystemNfchangebootstrap
 Joomla! V.3 - Change Bootstrap 2 to 4 
-(This plugin does currently NOT change classes. Therefore you'll have to update it for Bootstrap 4.
+
+(This plugin does NOT change classes or anything else than script and stylesheet includes. Therefore you will have to update your template and component/module overrides for Bootstrap 4.)
 
 ## About
 This plugin helps for fast removal of Bootstrap 2 in Joomla! and putting Bootstrap 4 in.
